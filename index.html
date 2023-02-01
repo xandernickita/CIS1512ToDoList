@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <!--Main Styles-->
+  <link rel="stylesheet" href="Styles/styles.css">
+  <!--Animated Text Feature-->
+  <link rel="stylesheet" href="Styles/textAnimation.css">
+  <!--Custom Fonts-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+
+  <video class="background" id="background" autoplay muted loop>
+    <source src="Assets/rain.mp4" type="video/mp4">
+  </video>
+
+  <!--Main Container-->
+  <main class="app">
+
+    <!--Animated Text Elements ('i' used for CSS identification)-->
+    <div class="wave">
+      <span style="--i:1; color: aqua;">T</span>
+      <span style="--i:2">A</span>
+      <span style="--i:3">S</span>
+      <span style="--i:4; color: #fa1085;">K</span>
+      <span style="--i:5">&nbsp;</span>
+      <span style="--i:6; color: aqua;">M</span>
+      <span style="--i:7">A</span>
+      <span style="--i:8">N</span>
+      <span style="--i:9; color: #8B5CF6;">A</span>
+      <span style="--i:10">G</span>
+      <span style="--i:11">E</span>
+      <span style="--i:12; color: #fa1085;">R</span>
+      <span style="--i:13">&#128212</span>
+    </div><br><br>
+
+    <!-- <h1><big>Task Manager &#128212</big></h1><br><br> -->
+
+    <!--Conatiner for current date & textbox-->
+    <div class="input-header">
+      <!--Displays current date using JS-->
+      <h1 style="font-style: italic; letter-spacing: 3px; font-weight: 500"><span id="date"></span></h1>
+      <!--Diplays Current Time-->
+      <h1 style="font-style: italic; letter-spacing: 3px; font-weight: 500"><span id="time"></span></h1>
+      <!--Task textbox-->
+      <div class="to-do-input">
+        <input type="text" id="item" placeholder="Enter a task. . ."><button id="enter" style="font-size: bold;" title="Add Item">&plus;</button>
+      </div>
+    </div>
+    <div class="to-do-list"></div><br><br><br>
+
+  </main>
+
+  
+
+
+  <!-- <footer>
+    <div class="select">
+      <select id="bg-select" onchange="changeVideo(this.value)" class="selectMenu" style="background-image: transparent;">
+        <option selected disabled style="text-align: center;">Choose a Background</option>
+        <option value="Assets/rain.mp4" class="menuOption" style="text-align: center; color: #fa1085;">Rain</option>
+        <option value="Assets/Toronto.mp4" class="menuOption" style="text-align: center; color: #fa1085;">City</option>
+        <option value="Assets/space.mp4" class="menuOption" style="text-align: center; color: #fa1085;">Space</option>
+      </select>
+    </div>
+  </footer> -->
+<!--Scripts-->
+<script src="Scripts/scripts.js" async></script>
+<script src="Scripts/backgroundSwitcher.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Fira+Sans:wght@200&family=MuseoModerno:wght@200&family=Poppins:wght@200;400;500;600&display=swap');
+
+:root {
+  --dark: #374151;
+  --darker: #1F2937;
+  --darkest: #111827;
+  --grey: #6B7280;
+  --pink: #fa1085;
+  --purple: #8B5CF6;
+  --light: aliceblue;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.wave {
+  position: relative;
+  -webkit-box-reflect: below -18px linear-gradient(transparent, var(--purple));
+  font-size: 40px;
+}
+
+.wave span {
+  font-family: 'Fira Sans', sans-serif;
+  position: relative;
+  display: inline-block;
+  color: var(--light);
+  text-transform: uppercase;
+  animation: wave 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes wave {
+
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-20px);
+  }
+}
